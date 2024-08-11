@@ -1,0 +1,76 @@
+/* Styles for the TikTok inspired login page */
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Menghindari scroll bar di body */
+}
+
+.background-image {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradien latar belakang dari ungu ke biru */
+    background-size: cover; /* Menyusut gambar latar belakang */
+    height: 100vh; /* Memastikan latar belakang mengisi seluruh tinggi viewport */
+    display: flex;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center; /* Memusatkan konten secara vertikal */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center; /* Memusatkan formulir login secara horizontal */
+    align-items: center; /* Memusatkan formulir login secara vertikal */
+    width: 100%;
+    height: 100%;
+}
+
+.login-form {
+    background: rgba(0, 0, 0, 0.7); /* Latar belakang kotak login dengan transparansi */
+    padding: 20px; /* Mengurangi padding untuk ukuran lebih kecil */
+    border-radius: 10px; /* Menyesuaikan radius sudut untuk bentuk lebih kecil */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Mengurangi bayangan */
+    text-align: center; /* Menyusun teks di tengah */
+    color: #ffffff; /* Warna teks putih untuk kontras */
+    max-width: 200px; /* Lebar maksimal kotak login lebih kecil */
+    width: 100%; /* Lebar kotak login mengikuti lebar kontainer */
+    height: auto; /* Tinggi otomatis berdasarkan konten */
+    display: flex;
+    flex-direction: column; /* Mengatur elemen secara vertikal */
+    justify-content: center; /* Memusatkan elemen di dalam kotak login */
+}
+
+h1 {
+    margin-bottom: 15px; /* Jarak di bawah judul lebih kecil */
+    font-size: 1.5em; /* Ukuran font judul lebih kecil */
+    color: #ffffff; /* Warna teks putih untuk kontras */
+}
+
+input {
+    width: calc(100% - 20px); /* Mengurangi lebar input agar sesuai dengan padding */
+    padding: 10px; /* Mengurangi padding untuk ukuran lebih kecil */
+    margin: 10px auto; /* Mengatur margin otomatis untuk pusat */
+    border: none;
+    border-radius: 5px;
+    background: hsl(0, 0%, 100%); /* Warna latar belakang input putih */
+    color: #333333; /* Warna teks hitam untuk keterbacaan */
+    font-size: 0.9em; /* Mengurangi ukuran font input */
+}
+
+button {
+    width: calc(100% - 20px); /* Mengurangi lebar tombol agar sesuai dengan padding */
+    padding: 10px; /* Mengurangi padding untuk ukuran lebih kecil */
+    border: none;
+    border-radius: 5px;
+    background: #fe2c55; /* Warna tombol merah */
+    color: #ffffff; /* Warna teks tombol putih */
+    font-size: 0.9em; /* Mengurangi ukuran font tombol */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px; /* Menambahkan jarak antara input dan tombol */
+}
+
+button:hover {
+    background: #d80d4b; /* Warna tombol merah lebih gelap saat hover */
+}
+
